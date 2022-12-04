@@ -1,0 +1,27 @@
+/*  quando clicar no icon de img o container midia deve ficar flex */
+.container-midia {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  /* justify-content: space-around; */
+  /* height: 70vh; */
+  width: 90%;
+  margin-top: 30px;
+}
+
+.container-midia img {
+  visibility: hidden;
+  width: 100%;
+}
+
+.container-midia iframe {
+  width: 100%;
+}
+
+.container-midia p {
+  font-size: 16px;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
