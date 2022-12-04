@@ -4,14 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <script src="https://kit.fontawesome.com/9ba05cd871.js" crossorigin="anonymous"></script>
     <title>Picture Day</title>
   </head>
   <body>
     <main class="container">
       <section class="container-text"></section>
-      <section class="container-img"></section>
-      <section class="menu-buttons"></section>
+      <section class="container-midia"></section>
+      <section class="menu-buttons">
+
+
+        <div class="menu">
+          <label for="date"> Insira uma data</label>
+          <input type="date" id="date" title="Input Data" name="date" />
+          <button type="submit" title="botão" id="btn-date">Enviar</button>
+        </div>
+
+
+        <div class="menu-icons">
+          <i title="Buscar data" class="fa-solid fa-magnifying-glass fa-xl"></i>
+          <i
+            title="Exibir texto"
+            class="fa-regular fa-file-lines img fa-xl"
+          ></i>
+          <i
+            title="Exibir imagem"
+            id="btn-img"
+            class="fa-regular fa-image fa-xl"
+          ></i>
+        </div>
+      </section>
     </main>
   </body>
 </html>
-
