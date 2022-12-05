@@ -4,7 +4,7 @@
   font-family: "Ubuntu", sans-serif;
   background: url(/assets/svg/container-img.svg);
   min-height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -38,6 +38,10 @@
 }
 @media screen and (min-width: 912px) {
   .container {
+    border: none;
+  }
+
+  .container.active {
     border: none;
   }
 }
