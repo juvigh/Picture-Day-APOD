@@ -16,7 +16,6 @@
   flex-direction: column-reverse;
 }
 
-/* quando a api for acionada e a class "active" for chamada, ativar esta estilizacao no main */
 .container.active {
   background: linear-gradient(
       0deg,
@@ -24,8 +23,21 @@
       rgba(36, 36, 36, 0.7)
     ),
     url(/assets/svg/container-img.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* quando a imagem for chamada, fazer com que a url do background mude */
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 912px) {
+  .container {
+    border: none;
+  }
 }

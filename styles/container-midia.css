@@ -1,17 +1,17 @@
-/*  quando clicar no icon de img o container midia deve ficar flex */
 .container-midia {
   display: none;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  /* justify-content: space-around; */
-  /* height: 70vh; */
   width: 90%;
   margin-top: 30px;
 }
 
+.container-midia.active {
+  display: flex;
+}
+
 .container-midia img {
-  visibility: hidden;
   width: 100%;
 }
 
@@ -24,4 +24,10 @@
   margin-top: 20px;
   letter-spacing: 0.5px;
   line-height: 1.5;
+}
+
+@media screen and (min-width: 1024px) {
+  .container-midia {
+    width: 75%;
+  }
 }
