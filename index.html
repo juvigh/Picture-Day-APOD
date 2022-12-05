@@ -4,45 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/container-main.css" />
-    <link rel="stylesheet" href="/styles/container-text.css">
-    <link rel="stylesheet" href="/styles/container-midia.css">
-    <link rel="stylesheet" href="/styles/menu-buttons.css">
-
-    <script src="https://kit.fontawesome.com/9ba05cd871.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/container-text.css" />
+    <link rel="stylesheet" href="/styles/container-midia.css" />
+    <link rel="stylesheet" href="/styles/menu-buttons.css" />
+    <script
+      src="https://kit.fontawesome.com/9ba05cd871.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/controllers/sendApi.js" defer></script>
+    <script src="/js/controllers/dateLimit.js" defer></script>
+    <script src="/js/controllers/search-data.js" defer></script>
+    <script src="/js/controllers/activeContainerMidia.js" defer></script>
+    <script src="/js/controllers/activeContainerText.js" defer></script>
+    <script src="/js/controllers/activeContainerMain.js" defer></script>
+    <script src="/js/controllers/activeMenuIcons.js" defer></script>
     <title>Picture Day</title>
   </head>
   <body>
     <main class="container">
       <section class="container-text">
-        <h2></h2>
-        <p></p>
+        <h2 id="title-container-text" title="Título"></h2>
+        <p id="description-container-text" title="Texto"></p>
       </section>
       <section class="container-midia">
-        <img>
-        <iframe></iframe>
-        <p> </p>
+        <img id="img-container-midia" title="Imagem" />
+        <iframe id="video-container-midia" title="Vídeo"></iframe>
+        <p id="description-container-midia" title="Texto"></p>
       </section>
       <section class="menu-buttons">
-
         <div class="menu">
-          <label for="date"> Insira uma data</label>
-          <input type="date" id="date" title="Input Data" name="date" />
-          <button type="submit" title="botão" id="btn-date">Enviar</button>
+          <label for="date" title="Insira uma data"> Insira uma data</label>
+          <input
+            type="date"
+            id="date"
+            title="Input Data"
+            name="date"
+            min="1995-06-16"
+          />
+          <button id="btn-date" type="button" title="Botão enviar">
+            Enviar
+          </button>
         </div>
 
-
         <div class="menu-icons">
-          <i title="Buscar data" class="fa-solid fa-magnifying-glass fa-xl"></i>
+          <i
+            title="Buscar data"
+            id="btn-search-data"
+            class="fa-solid icon fa-magnifying-glass fa-xl"
+          ></i>
           <i
             title="Exibir texto"
-            class="fa-regular fa-file-lines img fa-xl"
+            id="btn-text"
+            class="fa-regular fa-file-lines icon img fa-xl"
           ></i>
           <i
             title="Exibir imagem"
             id="btn-img"
-            class="fa-regular fa-image fa-xl"
+            class="fa-regular fa-image icon fa-xl"
           ></i>
         </div>
       </section>
