@@ -14,4 +14,4 @@
   
   ## Status do Projeto
   <p> Online ✅ </p>
-  <p> Link do projeto: <a href="https://juvigh.github.io/Picture-Day-APOD/"> Clique aqui </a> </p> 
+  <p> Link do projeto: <a href="https://juvigh.github.io/Picture-Day-APOD/" target="_blank"> Clique aqui </a> </p> 
