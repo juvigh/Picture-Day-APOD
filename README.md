@@ -1,6 +1,6 @@
 # Picture Day
 <p>🚀 Uma simples aplicação web a qual permite buscar informações astronômicas de qualquer dia, com ressalvas, que desejar.</p>
-<p>💡 Utilizei a api "APOP" da NASA para obter as informações </p>
+<p>💡 Utilizei a api da NASA para obter as informações </p>
 
 <br>
 
